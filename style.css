@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+:root {
+  --bg-brown: #ad343e;
+  --bg-off-white: #f9f9f7;
+  --bg-white: #ffff;
+  --heading-black: #2c2f24;
+  --bg-light-black: #474747;
+  --bh-hover: #dbdfd0;
+  --heading-font: "Playfair Display", serif;
+  --text-font: "DM Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* <!-- The head mail and address --> */
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.header-mail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-light-black);
+  height: 45px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.left-icon {
+  color: var(--bg-off-white);
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+.left-icon p {
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.fa-regular {
+  padding-left: 25px;
+}
+.right-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: var(--bg-white);
+  cursor: pointer;
+}
+.fa-brands {
+  width: 30.17px;
+  height: 30.17px;
+  background: #f9f9f71f;
+  padding: 8px;
+  border-radius: 50px;
+}
+/* <!-- The head mail and address --> */
+
+/* Nav bar start */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 74px;
+  height: 55px;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  padding-left: 13.83px;
+  font-family: var(--heading-font);
+  font-size: 42.67px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 29.33px;
+  letter-spacing: -0.40000003576278687px;
+  text-align: left;
+}
+.menu-bar {
+  padding-right: 50px;
+  gap: 10px;
+}
+.bar {
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  height: 24px;
+  text-decoration: none;
+  color: var(--heading-black);
+  padding: 4px 16px 4px 16px;
+}
+
+.bar:hover {
+  border-radius: 34px;
+  color: var(--bh-hover);
+}
+.btn1 {
+  padding: 12px 24px 12px 24px;
+  gap: 10px;
+  border-radius: 118px;
+  border: 1.5px solid;
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: right;
+}
+.btn:hover {
+  border-radius: 34px;
+  background: var(--bh-hover);
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72;
+}
+.contact-heading h1 {
+  font-family: var(--heading-font);
+  color: var(--heading-black);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 96px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+.contact-heading p {
+  font-family: var(--text-font);
+  color: #495460;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+/* customer request start */
+
+.name-form {
+  display: inline;
+}
+/* customer request end */
+
+/* customer-requrst start */
+.customer-request {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  justify-content: center;
+  padding-top: 83px;
+  padding-bottom: 125px;
+}
+
+.call-info {
+  font-family: var(--text-font);
+  color: var(--heading-black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.number {
+  font-family: var(--text-font);
+  color: var(--bg-brown);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+.time {
+  font-family: var(--text-font);
+  color: var(--heading-black);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+/* customer-request end */
+
+/* footer section start */
+footer {
+  background: var(--bg-light-black);
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 120px;
+}
+.column-1 {
+  width: 70%;
+}
+.white-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  padding-bottom: 43px;
+}
+.white-logo img {
+  color: var(--bg-white);
+}
+
+.white-logo h3 {
+  font-family: var(--heading-font);
+  color: var(--bg-white);
+  font-size: 32.67px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 29.33px;
+  letter-spacing: -0.40000003576278687px;
+  text-align: left;
+}
+
+.white-logo-text {
+  font-family: var(--text-font);
+  color: #adb29e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.social-image-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  color: var(--bg-white);
+  cursor: pointer;
+}
+.media {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-brown);
+  padding: 12px 12px 12px 12px;
+  border-radius: 50px;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  width: 100%;
+}
+.page-title {
+  font-family: var(--text-font);
+  color: var(--bg-white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+.page-title-text p {
+  font-family: var(--text-font);
+  color: #dbdfd0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.column-3 {
+  width: 100%;
+}
+.right-image-insta {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.right-image-insta-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.imfood {
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+.copy-write p {
+  font-family: var(--text-font);
+  color: #adb29e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 85px;
+}
+/* footer section end  */
