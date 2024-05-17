@@ -151,12 +151,59 @@
   line-height: 28px;
   text-align: center;
 }
-/* customer request start */
-
-.name-form {
-  display: inline;
+/* form input start */
+.form{
+  /* width: 797px;
+  height:588px; */
+  margin: auto;
+  padding-top: 72px;
 }
-/* customer request end */
+form{
+  padding: 40px;
+  box-shadow: 0px 2.98px 59.57px 0px #00000014;
+  background: #FFFFFF;
+  border:2px solid black;
+  border-radius: 16px;
+
+
+}
+.name-form {
+  display:inline-block;
+}
+.name-form input{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:24px;
+  width: Fixed (350px);
+height: Fixed (60px)px;
+padding: 0px 24px 0px 24px;
+/* gap: 10px; */
+border-radius: 72px;
+
+
+}
+.formname{
+  width: 797px;
+  height:588px;
+}
+.formname label{
+font-family: var(--text-font);
+color:var(--heading-black);
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+
+padding-bottom: 8px;
+
+}
+.formname input{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* form input end */
 
 /* customer-requrst start */
 .customer-request {
