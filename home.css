@@ -135,6 +135,7 @@
   height: 802px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .breakfast-text{
   display: flex;
@@ -147,7 +148,7 @@
   font-weight: 400;
   line-height: 96px;
   text-align: center;
-  padding-left: 220px;
+  padding-left: 50px;
   padding-right: 50px;
   padding-top: 207px;
   color: var(--heading-black);
@@ -161,11 +162,11 @@
   line-height: 32px;
   text-align: center;
   color: var(--heading-black);
-  padding-left: 200px;
+  padding-left: 10px;
 }
 .button {
   display: flex;
-  padding-left: 590px;
+  padding-left: 530px;
   margin-top: 40px;
   gap: 16px;
 }
@@ -244,14 +245,18 @@
   text-align: center;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
-
+/* Information Section start */
 .information {
   background: var(--bg-off-white);
+  
+}
+.shawamaImage{
+  position: relative;
 }
 .information1 {
   padding-top: 120px;
-  position: relative;
   display: flex;
   justify-content: space-between;
   height: 856px;
@@ -261,8 +266,8 @@
   width: 411px;
   border-radius: 12px;
   position: absolute;
-  top: 400px;
-  right: 480px;
+  bottom: 100px;
+  left: 250px;
 }
 .address {
   padding: 50px;
@@ -307,8 +312,7 @@
   margin-bottom: 25px;
   align-items: center;
 }
-
-.envelope1 {
+#mail1{
   color: var(--bg-white);
   width: 18px;
   height: 18px;
@@ -328,7 +332,7 @@
   gap: 20px;
   align-items: center;
 }
-.location {
+#location {
   color: var(--bg-white);
   width: 18px;
   height: 18px;
@@ -388,6 +392,8 @@
   line-height: 24px;
   align-items: left;
 }
+/* Information Section end */
+
 
 /* OFFER SECTION START */
 .we-offer {
@@ -500,13 +506,13 @@ padding-bottom: 50px;
 
 /* fasted food delivery in city end */
 
+/* customers section start */
 .customers-section {
   background: var(--bg-white);
   padding-top: 98px;
   padding-bottom: 135px;
 }
 
-/* customers section start */
 .customers-heading h2 {
   font-family: var(--heading-font);
   color: var(--heading-black);
@@ -795,3 +801,482 @@ footer {
   padding-bottom: 85px;
 }
 /* footer section end  */
+
+
+/* Responsiveness */
+
+/* mobile screen */
+@media (max-width: 500px) {
+  .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header-mail{
+  display: none;
+}
+.menu-bar{
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  /* height: 55px; */
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  padding-top: 20px;
+  font-family: var(--heading-font);
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 29.33px;
+  letter-spacing: -0.40000003576278687px;
+  text-align: left;
+}
+/* hero section start */
+.hero-section {
+  background: url("./image/bgimage.svg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.breakfast-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.breakfast-text h1 {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 50px;
+  color: var(--heading-black);
+  margin-bottom: 20px;
+}
+.breakfast-text p {
+  font-family: var(--text-font);
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 10px;
+  text-align: center;
+  color: var(--heading-black);
+  padding-left: 5px;
+}
+.button {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 40px;
+  margin:auto;
+  margin-top: 20px;
+  gap: 8px;
+}
+.btn2 {
+  padding: 9px 9px 9px 9px;
+  border-radius: 50px;
+  border: 1.5px solid;
+  font-family: var(--text-font);
+  background: var(--bg-off-white);
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 12px;
+}
+/* hero section ends */
+
+/* browse-menu start */
+
+.browseMenu {
+  background: var(--bg-white);
+}
+.menu{
+  margin-top: 20px;
+}
+
+.menu h2{
+  font-family: var(--heading-font);
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 20px;
+  text-align: center;
+}
+.menuicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 8px;
+}
+.menu-icon1 {
+  border-radius: 12px;
+  border: 1.5px solid;
+  border-color: var(--bh-hover);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 5px 5px;
+}
+
+.menu-icon1 h3 {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.breakfast p {
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.exploremenu {
+  color: var(--bg-brown);
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Information Section start */
+.information {
+  background: var(--bg-off-white);
+
+  
+}
+.shawamaImage >img{
+  width: 100%;
+}
+.information1 {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.info {
+  background: var(--bg-light-black);
+  border-radius: 12px;
+  
+}
+.address {
+  padding: 50px;
+}
+.address h3 {
+  font-family: var(--text-font);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 45px;
+  color: var(--bg-white);
+}
+
+.come {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+#phone {
+  color: var(--bg-white);
+  width: 18px;
+  height: 18px;
+}
+
+.come p {
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--bg-off-white);
+}
+.restaurant {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+#mail1{
+  color: var(--bg-white);
+  width: 18px;
+  height: 18px;
+}
+.restaurant p {
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--bg-off-white);
+}
+
+.marshall {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+#location {
+  color: var(--bg-white);
+  width: 18px;
+  height: 18px;
+}
+.marshall p {
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: var(--bg-off-white);
+}
+
+.provide-side {
+  padding-left: 10px;
+  padding-top: 20px;
+}
+.provide-side h2 {
+  font-family: var(--heading-font);
+  color: var(--heading-black);
+  padding-bottom: 24px;
+  width: 90%px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: left;
+}
+
+.provide-side p {
+  font-family: var(--text-font);
+  color: var(--heading-black);
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 28px;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.at-place {
+  font-family: var(--text-font);
+  color: #414536;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.more-btn {
+  padding: 10px 10px 10px 10px;
+  border-radius: 50px;
+  border: 1px solid;
+  font-family: var(--text-font);
+  background: var(--bg-off-white);
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 10px;
+  align-items: left;
+}
+
+/* OFFER SECTION START */
+.we-offer {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.text-offer {
+  font-size: 25px;
+  font-weight: 200;
+  padding-bottom: 30px;
+}
+.offerimage {
+  flex-direction: column;
+  align-items:center;
+  gap:8px;
+  height:1700px;
+  width:100%;
+}
+.offer-grid h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* OFFER SECTION END */
+
+/* fasted food delivery in city start */
+.food-delivery {
+  display: flex;
+  flex-direction: column;
+  height: 1600px;
+  width:100%;
+  padding-top: 10px;
+  padding-left:20px;
+}
+.i2 >img{
+width:100%;
+}
+.i3{
+  padding-top: 8px;
+}
+
+.food-delivery-text h2{
+padding-top: 5px;
+}
+.food-delivery-text p{
+padding-bottom: 20px;
+}
+/* fasted food delivery in city end */
+
+/* customers section start */
+.customers-section {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.customers-heading h2 {
+  font-family: var(--heading-font);
+  color: var(--heading-black);
+  font-size: 30px;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+}
+.the-restaurant {
+  width: 100%;
+  padding: 20px 15px 15px 15px;
+}
+.the-restaurant h3 {
+  text-align: center;
+  padding-bottom: 24px;
+}
+/* customers section end */
+
+/* blog section start */
+.ourblog-articles {
+  background: var(--bg-off-white);
+  padding-top: 120px;
+  padding-bottom: 137px;
+}
+.our-blog {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-bottom: 64px;
+}
+.our-blog h2 {
+  font-family: var(--heading-font);
+  color: var(--heading-black);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+.read-link {
+  height: 50px;
+  padding: 0px 12px 0px 12px; 
+  gap: 10px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.i1 > img {
+  width: 100%;
+}
+.i1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  height: 690px;
+  width: 500px;
+  border-radius: 12px;
+}
+.grid-item {
+  border-radius: 12px;
+  box-shadow: 0px 2.98px 59.57px 0px #00000014;
+}
+.grid-item-text {
+  padding: 45px 33px 53px 35px;
+}
+.date {
+  font-family: var(--text-font);
+  color: #737865;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.secret {
+  font-family: var(--text-font);
+  color: var(--heading-black);
+  padding-bottom: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+}
+.grid-last-text {
+  font-family: var(--text-font);
+  color: #414536;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.grid-food-tab {
+  padding: 30px 25px 14px 25px;
+}
+.date-tab2 {
+  font-family: var(--text-font);
+  color: #737865;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  padding-bottom: 12px;
+}
+.prepare-tab2 {
+  font-family: var(--text-font);
+  color: #2c2f24;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+}
+/* blog section end */
+
+}
