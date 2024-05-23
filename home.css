@@ -198,12 +198,12 @@
   font-weight: 500;
   line-height: 60.5px;
   text-align: center;
-  margin-top: 92px;
+  padding-top: 92px;
 }
 .menuicon {
   display: flex;
   justify-content: space-between;
-  margin-top: 64px;
+  padding-top: 64px;
   gap: 24px;
 }
 .menu-icon1 {
@@ -1526,9 +1526,173 @@ footer {
     text-align: center;
     padding-top:40px;
   }
-  /* .browseMenu{
-    padding-top{
-      
-    }
-  } */
+  .hero-section{
+    height: 600px;
+  }
+  .breakfast-text h1{
+    padding-top: 100px;
+  }
+/* Browse menu start */
+.menu {
+  font-size: 50px;
+  line-height: 30.5px;
+  padding-top: 50px;
+}
+.menuicon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+
+}
+.menu-icon1 {
+  padding: 20px 34px 32px 34px;
+}
+
+.menu-icon1 h3 {
+  font-size: 30px;
+}
+
+.breakfast p {
+  font-size: 18px;
+}
+
+.exploremenu {
+  font-size: 18px;
+}
+/* Browse menu end */
+
+/* information start */
+.information {
+  background: var(--bg-off-white);
+  width:100%;
+  height: 1300px;
+
+}
+.shawamaImage{
+  position: relative;
+}
+.information1 {
+  padding-top: 120px;
+  display: grid;
+}
+.info {
+  width: 50%;
+  position: absolute;
+  top:400px;
+  bottom: -140px;
+  left: 400px;
+}
+.address {
+  padding: 50px;
+  font-family: var(--bg-white);
+}
+.provide-side {
+  padding-left: 10px;
+  padding-top: 150px;
+}
+/* information end */
+
+/* Offer section start */
+.we-offer {
+  background: var(--bg-white);
+  padding-bottom: 210px;
+  padding-top: 50px;
+}
+.text-offer {
+  text-align: center;
+}
+.offerimage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 100px;
+  gap: 1px;
+  height: 750px;
+}
+.offer-grid p {
+padding-bottom:40px;
+}
+/* Offer section end */
+
+/* fasted food delivery in city start */
+.food-delivery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 1150px;
+  padding-top: 50px;
+}
+
+.i3 {
+  padding-top: 30px;
+  padding-bottom: 4px;
+}
+.food-delivery-text h2 {
+  padding-top: 4px;
+  padding-bottom: 20px;
+  width:400px;
+}
+.food-delivery-text p {
+  font-size: 20px;
+}
+.shop-info p {
+  font-size: 20px;
+}
+/* fasted food delivery in city end */
+
+/* customers section start */
+.customers-section {
+  padding-top: 28px;
+  padding-bottom: 100px;
+}
+.customers-heading h2 {
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.the-restaurant {
+  padding: 10px 10px 10px 10px;
+}
+.customers-image {  
+  gap: 8px;
+}
+/* customers section end */
+
+/* blog section start */
+.ourblog-articles {
+  background: var(--bg-off-white);
+  padding-top: 50px;
+  padding-bottom: 37px;
+}
+.our-blog {
+  gap:270px;
+  padding-bottom: 40px;
+}
+.i1 {
+  height: 655px;
+}
+/* blog section end */
+
+/* footer start */
+.grid-footer {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  width: 100%;
+}
+.column-1 {
+  width: 100%;
+  padding-bottom: 50px;
+}
+.white-logo-text p {
+  width: 90%;
+}
+.social-image-icon {
+  gap: 24px;
+}
+.column-2 {
+  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+/* footer end */
 }
