@@ -238,7 +238,6 @@
 
 .exploremenu {
   color: var(--bg-brown);
-  font-family: var(--text-font);
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
@@ -347,13 +346,13 @@
 
 .provide-side {
   padding-left: 90px;
-  padding-top: 79.5px;
+  padding-top: 50.5px;
 }
 .provide-side h2 {
   font-family: var(--heading-font);
   color: var(--heading-black);
   padding-bottom: 24px;
-  width: 557px;
+  width: 100%;
   font-size: 55px;
   font-weight: 500;
   line-height: 60.5px;
@@ -366,7 +365,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 28px;
-  width: 557px;
+  width: 100%;
   text-align: left;
   padding-bottom: 24px;
 }
@@ -383,7 +382,7 @@
 .more-btn {
   padding: 20px 32px 20px 32px;
   border-radius: 118px;
-  border: 1.5px light;
+  border: 1.5px solid;
   font-family: var(--text-font);
   background: var(--bg-off-white);
   font-size: 16px;
@@ -421,12 +420,8 @@
 }
 .catering > img {
   height: 500px;
-  width: 50%;
+  width: 10%;
 }
-.catering {
-  border-radius: 12px;
-}
-
 .offer-grid h3 {
   font-family: var(--text-font);
   font-size: 24px;
@@ -626,14 +621,18 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 4;
-  height: 690px;
-  width: 500px;
+  height: 760px;
+  width: 100%;
   border-radius: 12px;
 }
 .grid-item {
   border-radius: 12px;
   box-shadow: 0px 2.98px 59.57px 0px #00000014;
 }
+.french {
+  width: 100%;
+}
+
 .grid-item-text {
   padding: 45px 33px 53px 35px;
 }
@@ -803,7 +802,7 @@ footer {
 /* Responsiveness */
 
 /* mobile screen */
-@media (max-width: 575.98px) {
+@media (max-width: 500px) {
   .container {
     padding-left: 20px;
     padding-right: 20px;
@@ -813,6 +812,9 @@ footer {
     display: none;
   }
   .menu-bar {
+    display: none;
+  }
+  .btn1 {
     display: none;
   }
   .nav {
@@ -899,7 +901,7 @@ footer {
     padding: 15px 5px 5px;
   }
   .exploremenu {
-    padding-bottom:15px;
+    padding-bottom: 15px;
   }
 
   /* Information Section start */
@@ -919,7 +921,7 @@ footer {
   .info {
     position: static;
     left: auto;
-    top:auto;
+    top: auto;
     width: 100%;
     margin-top: 10px;
   }
@@ -1190,222 +1192,343 @@ footer {
   /* footer section end  */
 }
 
+@media (min-width: 501px) and (max-width: 767.98px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-@media (min-width: 576px) and (max-width: 767.98px){
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
+  .header-mail {
+    display: none;
+  }
 
-.header-mail {
-  display: flex;
-  justify-content: left;
-  height: 45px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-.right-icon {
-  padding-left:100px;
-}
-/* <!-- The head mail and address --> */
-.menu-bar{
-  display:none;
-}
-.nav {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
+  /* <!-- The head mail and address --> */
+  .menu-bar {
+    display: none;
+  }
+  .nav {
+    padding-top: 40px;
+    padding-right: 90px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
 
-.logo h1 {
-  padding-top: 10px;
-  font-size: 40px;
-}
-/* hero section start */
-.hero-section {
-  height: 50vh;
-  width:100%;
-}
+  .logo h1 {
+    padding-top: 10px;
+    font-size: 40px;
+  }
+  .btn1 {
+    padding: 12px 24px 30px 24px;
+    gap: 10px;
+    border-radius: 118px;
+    border: 1.5px solid;
+    font-family: var(--text-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: right;
+    height: 40px;
+  }
+  /* hero section start */
+  .hero-section {
+    height: 50vh;
+    width: 100%;
+  }
 
-.breakfast-text h1 {
-  font-size: 50px;
-  line-height: 40px;
-  padding-top: 50px;
-  margin-bottom: 25px;
-}
+  .breakfast-text h1 {
+    font-size: 50px;
+    line-height: 40px;
+    padding-top: 50px;
+    margin-bottom: 25px;
+  }
 
-.breakfast-text p {
-  line-height: 25px;
-  padding-left: 10px;
-  padding-right: 20px;
-}
-.button {
-  display: flex;
-  justify-content: center;
-  width:100%;
-  padding-left: 20px;
-  margin-top: 20px;
-}
-.btn2 {
-  padding: 15px 15px 15px 15px;
-  text-align: right;
-}
-.btn2:hover {
-  border-radius: 34px;
-  background: var(--bg-brown);
-}
-/* hero section ends */
+  .breakfast-text p {
+    line-height: 25px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    margin-top: 50px;
+  }
+  .btn2 {
+    padding: 15px 15px 15px 15px;
+    text-align: right;
+  }
+  .btn2:hover {
+    border-radius: 34px;
+    background: var(--bg-brown);
+  }
+  /* hero section ends */
 
-/* browse-menu start */
+  /* browse-menu start */
 
-.menu {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 40px;
-  text-align: center;
-  margin-top: 30px;
-  padding-left:10px;
-}
-.menuicon {
-  display: grid;
-  grid-template-columns: auto;
-  margin-top: 30px;
-  gap: 24px;
-}
-.menu-icon1 {
-  border-radius: 12px;
-  border: 1.5px solid;
-  border-color: var(--bh-hover);
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  align-items: center;
-  padding: 12px 12px 12px 12px;
-}
+  .menu {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 10px;
+  }
+  .menuicon {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    gap: 24px;
+  }
+  .menu-icon1 {
+    border-radius: 12px;
+    border: 1.5px solid;
+    border-color: var(--bh-hover);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    padding: 12px 12px 12px 12px;
+    margin: 0 auto;
+  }
 
-/* Information Section start */
-.information {
-  background: var(--bg-off-white);
-}
-.shawamaImage > img {
-  width: 85%;
-}
-.information1 {
-  padding-top: 25px;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
-  height: 1500px;
-}
-.info {
-  position: static;
-  left: auto;
-  top:auto;
-  width: 85%;
-  padding: 10px 10px 10px 10px;
-  margin-top:30px;
-}
+  /* Information Section start */
+  .information {
+    background: var(--bg-off-white);
+  }
+  .shawamaImage > img {
+    width: 100%;
+  }
+  .information1 {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    height: 1700px;
+  }
+  .info {
+    position: static;
+    left: auto;
+    top: auto;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    margin-top: 30px;
+  }
 
-.provide-side {
+  .provide-side {
     padding-left: 10px;
     padding-top: 50px;
   }
 
-.provide-side h2 {
-  width: 90%;
+  .provide-side h2 {
+    width: 90%;
+  }
+
+  .provide-side p {
+    width: 85%;
+  }
+
+  .more-btn {
+    border: 1.5px solid;
+  }
+
+  /* OFFER SECTION START */
+  .we-offer {
+    padding-bottom: 150px;
+    padding-top: 10px;
+  }
+  .text-offer {
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 30px;
+  }
+  .text-offer h2 {
+    text-align: center;
+  }
+  .offerimage {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
+    gap: 8px;
+    height: 1500px;
+    width: 100%;
+  }
+  .offer-grid > img {
+    width: 100%;
+  }
+  .offer-grid {
+    width: 50%;
+  }
+  .offer-grid h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* OFFER SECTION END */
+
+  /* fasted food delivery in city start */
+  .food-delivery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    height: 1150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+  }
+  .i2 > img {
+    width: 100%;
+  }
+  .i3 {
+    display: none;
+  }
+  .food-delivery-text h2 {
+    font-size: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 550px;
+  }
+  .food-delivery-text p {
+    padding-bottom: 10px;
+  }
+  /* fasted food delivery in city end */
+
+  /* customers section start */
+
+  .custormers-section {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .customers-heading h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .testimonial-section {
+    gap: 8px;
+  }
+  .the-restaurant {
+    background: var(--bg-off-white);
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+  }
+  .the-restaurant h3 {
+    font-size: 18px;
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+  }
+  /* customers section end */
+
+  /* blog section start */
+  .ourblog-articles {
+    padding-top: 20px;
+    padding-bottom: 37px;
+  }
+  .our-blog {
+    gap: 229px;
+    padding-bottom: 64px;
+  }
+  .our-blog h2 {
+    font-size: 30px;
+    font-family: 800;
+    line-height: 20px;
+    padding-top: 15px;
+  }
+  .read-link {
+    padding: 2px 2px 2px 2px;
+    height: 50px;
+    gap: 10px;
+    width: 25%;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .i1 {
+    width: 100%;
+  }
+  .grid-item {
+    width: 100%;
+  }
+  .french {
+    width: 100%;
+  }
+  /* blog section end */
+
+  /* footer section start */
+
+  .grid-footer {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .column-1 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .white-logo-text p {
+    width: 90%;
+  }
+  .social-image-icon {
+    gap: 24px;
+  }
+  .column-2 {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+  .column-3 {
+    width: 100%;
+  }
+  .right-image-insta {
+    gap: 8px;
+  }
+  .rightfoodimg {
+    width: 50%;
+  }
+  .rightfood-img {
+    width: 50%;
+  }
+  .right-image-insta-2 {
+    gap: 8px;
+  }
+  .imfood {
+    width: 50%;
+  }
+
+  .copy-write p {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  /* footer section end  */
 }
 
-.provide-side p {
-  width: 85%;
-}
-
-
-.more-btn {
-  border: 1.5px solid;
-}
-
-/* OFFER SECTION START */
-.we-offer {
-  padding-bottom: 50px;
-  padding-top: 10px;
-}
-.text-offer {
-  font-size: 25px;
-  font-weight: 200;
-  padding-bottom: 30px;
-}
-.text-offer h2{
-text-align: center;
-}
-.offerimage {
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin: auto;
-  gap: 8px;
-  height: 900px;
-  width: 100%;
-}
-
-.offer-grid h3 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* OFFER SECTION END */
-
-
-/* fasted food delivery in city start */ 
-.food-delivery {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  height: 1150px;
-  padding-top: 50px;
-}
-.i3 {
-  padding-top: 50px;
-  padding-bottom: 24px;
-  width:100%;
-}
-.food-delivery-text h2 {
-  font-size: 40px;
-  padding-top: 1px;
-  padding-bottom: 5px;
-}
-.food-delivery-text p {
-  padding-bottom: 10px;
-}
-/* fasted food delivery in city end */
-.custormers-section{
-  padding-top:10px;
-  padding-bottom:20px;
-}
-.customers-heading h2 {
-  font-size: 40px;
-  padding-bottom: 30px;
-}
-.testimonial-section {
-  gap: 24px;
-}
-.the-restaurant {
-  background: var(--bg-off-white);
-  width: 100%;
-  padding: 5px 5px 5px 5px;
-}
-.the-restaurant h3 {
-  font-size: 18px;
-}
-
-.testimonial-text {
-  font-size: 14px;
-}
-
-.customers-image {
-  gap: 8px;
-}
-
-.los {
-  font-size: 14px;
-}
-/* customers section end */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menu-bar{
+    display:none;
+  }
+  .nav{
+    padding-right: 100px;
+  }
+  .button{
+    padding-left: 230px;
+    align-items: center;
+    text-align: center;
+    padding-top:40px;
+  }
+  /* .browseMenu{
+    padding-top{
+      
+    }
+  } */
 }
