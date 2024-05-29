@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bristo Bliss</title>
-    <link rel="icon" href="./image/white-logo.svg" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./image/white-logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <!-- The head mail and address -->
@@ -38,16 +47,23 @@
         <img src="./image/logo.svg" alt="img" />
         <h1>Bistro Bliss</h1>
       </div>
-
-      <div class="menu-bar">
-        <a href="index.html" class="bar">Home</a>
-        <a href="#" class="bar">About</a>
-        <a href="#" class="bar">Menu</a>
-        <a href="#" class="bar">Pages</a>
-        <a href="service.html" class="bar">Contact</a>
-      </div>
-      <button class="btn1 btn2">Book A Table</button>
+      
+      <nav class="nav-bar">
+        <ul>
+          <li><a class="bar bar2 active" href="index.html"> Home</a></li>
+          <li><a class="bar" href="#"> About</a></li>
+          <li><a class="bar" href="#"> Menu</a></li>
+          <li><a class="bar" href="#"> Pages</a></li>
+          <li><a class="bar" href="contact.html">Contact</a></li>
+        </ul>  
+       <button class="btn1">Book A Table</button> 
+      </nav>
+      <labe id="hamburger">
+        <i class="fas fa-bars"></i>
+      </labe>
     </section>
+    <!-- Nav bar ends -->
+
     <!-- Nav bar ends -->
 
     <!-- contact Us Start  -->
@@ -199,5 +215,7 @@
       </div>
     </footer>
     <!-- footer section end -->
+
+    <script src="script.js"></script>
   </body>
 </html>
