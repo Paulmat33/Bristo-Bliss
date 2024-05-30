@@ -990,6 +990,9 @@ footer {
     padding-bottom: 85px;
   }
   /* footer section end  */
+  .to-top{
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 995.98px) {
@@ -1161,6 +1164,9 @@ footer {
     padding-bottom: 50px;
   }
   /* footer section end  */
+  .to-top{
+    display: none;
+  }
 }
 
 @media (min-width: 996px) and (max-width: 1290px) {
