@@ -850,8 +850,8 @@ footer {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: white;
+    /* backdrop-filter: blur(10px); */
     transition: 0.2s;
     height: 0px;
     overflow: hidden;
@@ -907,11 +907,11 @@ footer {
   .breakfast-text h1 {
     font-family: var(--heading-font);
     font-size: 40px;
-    line-height: 30px;
+    line-height: 40px;
     width: 60%;
     margin: auto;
     padding-top: 50px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   .breakfast-text p {
@@ -943,7 +943,7 @@ footer {
   }
   .menu {
     font-family: var(--heading-font);
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 30.5px;
     text-align: center;
@@ -1243,8 +1243,7 @@ footer {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: white;
     transition: 0.2s;
     height: 0px;
     overflow: hidden;
@@ -1580,8 +1579,7 @@ footer {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background:white;
     transition: 0.2s;
     height: 0px;
     overflow: hidden;

@@ -508,8 +508,7 @@ footer {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: white;
     transition: 0.2s;
     height: 0px;
     overflow: hidden;
@@ -844,8 +843,7 @@ footer {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: white;
     transition: 0.2s;
     height: 0px;
     overflow: hidden;
@@ -1069,8 +1067,7 @@ footer {
     left: 0;
     right: 0;
     width: 100vw;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: white;
     transition: 0.2s;
     height: 0px;
     overflow: hidden;
