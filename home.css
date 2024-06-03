@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  max-width: 1440px;
+  max-width: 2560px;
   margin: 0 auto;
 }
 /* <!-- The head mail and address --> */
@@ -818,6 +818,38 @@ footer {
 
 
 /* Responsiveness */
+@media (min-width: 320px) {
+  .hero-section{
+    background-image: url("./image/bgimage.svg");
+    background-repeat: no-repeat;
+    /* background-size: center; */
+  }
+  .button{
+    gap:8px;
+  }
+  .menu h2{
+    font-size:35px;
+  }
+  .we-provide h2{
+    padding-top:90px;
+  }
+  .our-blog{
+    width:100%;
+  }
+  .our-blog h2{
+    width:40%;
+  }
+  .read-link{
+    font-size:13px;
+  }
+  .white-logo h3{
+    font-size: 27px;
+  }
+  .column-2{
+    gap:50px;
+  }
+}
+
 @media (max-width: 575.98px) {
   /* <!-- The head mail and address --> */
   .container {
@@ -977,11 +1009,14 @@ footer {
     width: 90%;
   }
   .visiting-div {
-    width: 100%;
+    max-width: 95%;
     padding: 12px;
     position: absolute;
     top: 170px;
     left: 10px;
+  }
+  .address {
+    width: 200px;
   }
   .come {
     font-size: 16px;
@@ -2240,6 +2275,7 @@ footer {
   .we-provide h2 {
     font-size: 35px;
     line-height: 40.5px;
+    padding-top:0px;
   }
   /* Information Section end */
 
